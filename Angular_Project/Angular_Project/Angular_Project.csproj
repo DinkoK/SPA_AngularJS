@@ -57,8 +57,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\css\app.css" />
+    <Content Include="app\css\bootstrap-theme.css" />
+    <Content Include="app\css\bootstrap.css" />
     <Content Include="start-web-server.bat" />
     <Content Include="start-web-server.sh" />
+    <Content Include="app\css\bootstrap-theme.css.map" />
+    <Content Include="app\css\bootstrap.css.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

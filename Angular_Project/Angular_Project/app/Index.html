@@ -1,20 +1,36 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head ng-app="app" ng-controller="AppController">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="app" ng-controller="AppController">
+<head>
     <title></title>
     <link href="css/loading-bar.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />    
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.css" rel="stylesheet" />
+
 </head>
 <body>
     <header id="app-header">
         <div ng-include="'templates/partial/header.html'"></div>
     </header>
 
+    <div id='app-content'>
+        <div class='col-md-2 sidebar'>
+            <div ng-include="'templates/partial/left-sidebar.html'"></div>
+        </div>
 
+        <div class='col-md-8' ng-view>
+        </div>
+
+        <div class='col-md-2 sidebar' ng-controller="RightSidebarController">
+            <div ng-include="'templates/partial/right-sidebar.html'"></div>
+        </div>
+    </div>
 
 
     <footer id="app-footer">
         &copy; 2014 by Software University Foundation, No Rights Reserved
     </footer>
+
     <script src="lib/angular/angular.js"></script>
     <script src="js/loading-bar.js"></script>
     <script src="lib/angular/angular-resource.js"></script>
@@ -30,13 +46,13 @@
     <script src="js/services/adsServices.js"></script>
     <script src="js/services/notifyService.js"></script>
     <script src="js/services/authService.js"></script>
-   
+
 
     <script src="js/controllers/AppController.js"></script>
     <!--<script src="js/controllers/HomeController.js"></script>
     <script src="js/controllers/LoginController.js"></script>
     <script src="js/controllers/RegisterController.js"></script>
     <script src="js/controllers/RightSideBarController.js"></script>-->
-    
+
 </body>
 </html>
