@@ -66,6 +66,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\Index.html" />
+    <Content Include="app\lib\angular\angular-resource.js" />
+    <Content Include="app\lib\angular\angular-route.js" />
+    <Content Include="app\lib\angular\angular.js" />
+    <Content Include="app\lib\bootstrap\bootstrap-3.1.1.js" />
+    <Content Include="app\lib\jquery.noty\jquery.noty.js" />
+    <Content Include="app\lib\jquery\jquery-2.1.3.js" />
+    <Content Include="app\lib\ui.bootstrap\ui.bootstrap.pagination-0.12.0.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -75,11 +82,6 @@
     <Folder Include="app\css\" />
     <Folder Include="app\img\" />
     <Folder Include="app\js\" />
-    <Folder Include="app\lib\angular\" />
-    <Folder Include="app\lib\bootstrap\" />
-    <Folder Include="app\lib\jquery.noty\" />
-    <Folder Include="app\lib\jquery\" />
-    <Folder Include="app\lib\ui.bootstrap\" />
     <Folder Include="app\templates\" />
   </ItemGroup>
   <PropertyGroup>
