@@ -1,0 +1,6 @@
+C:\Users\a092\Documents\Visual Studio 2013\Projects\GitHub\SPA_AngularJS\Angular_Project\Angular_Project\bin\Angular_Project.dll.config
+C:\Users\a092\Documents\Visual Studio 2013\Projects\GitHub\SPA_AngularJS\Angular_Project\Angular_Project\bin\Angular_Project.dll
+C:\Users\a092\Documents\Visual Studio 2013\Projects\GitHub\SPA_AngularJS\Angular_Project\Angular_Project\bin\Angular_Project.pdb
+C:\Users\a092\Documents\Visual Studio 2013\Projects\GitHub\SPA_AngularJS\Angular_Project\Angular_Project\obj\Debug\Angular_Project.csprojResolveAssemblyReference.cache
+C:\Users\a092\Documents\Visual Studio 2013\Projects\GitHub\SPA_AngularJS\Angular_Project\Angular_Project\obj\Debug\Angular_Project.dll
+C:\Users\a092\Documents\Visual Studio 2013\Projects\GitHub\SPA_AngularJS\Angular_Project\Angular_Project\obj\Debug\Angular_Project.pdb
