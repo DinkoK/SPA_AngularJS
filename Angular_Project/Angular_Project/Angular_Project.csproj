@@ -60,6 +60,11 @@
     <Content Include="app\css\app.css" />
     <Content Include="app\css\bootstrap-theme.css" />
     <Content Include="app\css\bootstrap.css" />
+    <Content Include="app\js\controllers\HomeController.js" />
+    <Content Include="app\js\controllers\LoginController.js" />
+    <Content Include="app\js\controllers\RegisterController.js" />
+    <Content Include="app\js\controllers\RightSidebarController.js" />
+    <Content Include="app\templates\pagination\pagination.html" />
     <Content Include="start-web-server.bat" />
     <Content Include="start-web-server.sh" />
     <Content Include="app\css\bootstrap-theme.css.map" />
@@ -102,7 +107,6 @@
   <ItemGroup>
     <Folder Include="app\img\" />
     <Folder Include="app\templates\admin\" />
-    <Folder Include="app\templates\pagination\" />
     <Folder Include="app\templates\user\" />
   </ItemGroup>
   <PropertyGroup>
