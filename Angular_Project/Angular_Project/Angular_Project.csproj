@@ -68,7 +68,9 @@
     <Content Include="app\css\loading-bar.css" />
     <Content Include="app\Index.html" />
     <Content Include="app\js\app.js" />
+    <Content Include="app\js\controllers\AppController.js" />
     <Content Include="app\js\loading-bar.js" />
+    <Content Include="app\js\services\adsServices.js" />
     <Content Include="app\lib\angular\angular-resource.js" />
     <Content Include="app\lib\angular\angular-route.js" />
     <Content Include="app\lib\angular\angular.js" />
@@ -76,6 +78,10 @@
     <Content Include="app\lib\jquery.noty\jquery.noty.js" />
     <Content Include="app\lib\jquery\jquery-2.1.3.js" />
     <Content Include="app\lib\ui.bootstrap\ui.bootstrap.pagination-0.12.0.js" />
+    <Content Include="app\templates\home.html" />
+    <Content Include="app\templates\login.html" />
+    <Content Include="app\templates\partial\header.html" />
+    <Content Include="app\templates\register.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -83,7 +89,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\img\" />
-    <Folder Include="app\templates\" />
+    <Folder Include="app\templates\admin\" />
+    <Folder Include="app\templates\pagination\" />
+    <Folder Include="app\templates\user\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
