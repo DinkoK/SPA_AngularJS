@@ -57,6 +57,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="start-web-server.bat" />
+    <Content Include="start-web-server.sh" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -71,6 +73,8 @@
     <Content Include="app\js\controllers\AppController.js" />
     <Content Include="app\js\loading-bar.js" />
     <Content Include="app\js\services\adsServices.js" />
+    <Content Include="app\js\services\authService.js" />
+    <Content Include="app\js\services\notifyService.js" />
     <Content Include="app\lib\angular\angular-resource.js" />
     <Content Include="app\lib\angular\angular-route.js" />
     <Content Include="app\lib\angular\angular.js" />
@@ -81,7 +85,10 @@
     <Content Include="app\templates\home.html" />
     <Content Include="app\templates\login.html" />
     <Content Include="app\templates\partial\header.html" />
+    <Content Include="app\templates\partial\left-sidebar.html" />
+    <Content Include="app\templates\partial\right-sidebar.html" />
     <Content Include="app\templates\register.html" />
+    <Content Include="web-server.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

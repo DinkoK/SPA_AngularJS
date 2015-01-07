@@ -17,3 +17,20 @@ app.factory('adsService',
        }
    }
 );
+
+
+app.factory('townsService',
+	function ($resource, baseServiceUrl) {
+	    return {
+	        // TODO: implement a service to get towns
+	    };
+	}
+);
+
+app.factory('categoriesService',
+	function ($resource, baseServiceUrl) {
+	    return {
+	        // TODO: implement a service to get categories
+	    };
+	}
+);
