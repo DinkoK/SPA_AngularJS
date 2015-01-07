@@ -65,11 +65,22 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Index.html" />
+    <Content Include="app\Index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\css\" />
+    <Folder Include="app\img\" />
+    <Folder Include="app\js\" />
+    <Folder Include="app\lib\angular\" />
+    <Folder Include="app\lib\bootstrap\" />
+    <Folder Include="app\lib\jquery.noty\" />
+    <Folder Include="app\lib\jquery\" />
+    <Folder Include="app\lib\ui.bootstrap\" />
+    <Folder Include="app\templates\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
