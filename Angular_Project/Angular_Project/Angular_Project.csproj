@@ -60,6 +60,7 @@
     <Content Include="app\css\app.css" />
     <Content Include="app\css\bootstrap-theme.css" />
     <Content Include="app\css\bootstrap.css" />
+    <Content Include="app\img\no-img.jpg" />
     <Content Include="app\js\controllers\HomeController.js" />
     <Content Include="app\js\controllers\LoginController.js" />
     <Content Include="app\js\controllers\RegisterController.js" />
@@ -105,7 +106,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\img\" />
     <Folder Include="app\templates\admin\" />
     <Folder Include="app\templates\user\" />
   </ItemGroup>
