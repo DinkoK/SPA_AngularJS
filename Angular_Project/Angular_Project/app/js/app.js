@@ -7,14 +7,15 @@ app.constant('pageSize', 5);
 
 app.config(function ($routeProvider) {
 
+    $routeProvider.when('/user/ads/publish', {
+        templateUrl: 'templates/user/publish.html',
+        controller: 'UserPublishNewAdController'
+    });
     $routeProvider.when('/', {
         templateUrl: 'templates/home.html',
         controller: 'HomeController'
     });
-    $routeProvider.when('/user/ads/publish', {
-        templateUrl: 'templates/user/publish-new-ad.html',
-        controller: 'UserPublishNewAdController'
-    });
+    
     $routeProvider.when('/login', {
         templateUrl: 'templates/login.html',
         controller: 'LoginController'
@@ -29,7 +30,7 @@ app.config(function ($routeProvider) {
 });
 app.run(function ($rootScope, $location, authService) {
     $rootScope.$on('$locationChangeStart', function (event) {
-        if ($location.path().indexOf("/user/") != -1 && !authService.isLoggedIn()) {
+        if ($location.path().indexOf("/user/") !== -1 && !authService.isLoggedIn()) {
             // Authorization check: anonymous site visitors cannot access user routes
             $location.path("/");
         }
