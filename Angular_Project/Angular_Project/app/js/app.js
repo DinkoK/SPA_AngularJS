@@ -7,10 +7,11 @@ app.constant('pageSize', 5);
 
 app.config(function ($routeProvider) {
 
-    $routeProvider.when('/user/ads/publish', {
-        templateUrl: 'templates/user/publish.html',
+    $routeProvider.when('/user/publish-new-ad', {
+        templateUrl: 'templates/user/publish-new-ad.html',
         controller: 'UserPublishNewAdController'
     });
+
     $routeProvider.when('/', {
         templateUrl: 'templates/home.html',
         controller: 'HomeController'

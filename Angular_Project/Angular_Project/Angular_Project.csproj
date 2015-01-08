@@ -68,7 +68,7 @@
     <Content Include="app\js\controllers\UserPublishNewAdController.js" />
     <Content Include="app\js\services\userService.js" />
     <Content Include="app\templates\pagination\pagination.html" />
-    <Content Include="app\templates\publish.html" />
+    <Content Include="app\templates\user\publish-new-ad.html" />
     <Content Include="start-web-server.bat" />
     <Content Include="start-web-server.sh" />
     <Content Include="app\css\bootstrap-theme.css.map" />
@@ -110,7 +110,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\templates\admin\" />
-    <Folder Include="app\templates\user\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
