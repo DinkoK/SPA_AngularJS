@@ -16,7 +16,7 @@ app.factory('authService',
             },
 
             register: function (userData, success, error) {
-                request = {
+               var request = {
                     method: 'POST',
                     url: baseServiceUrl + '/api/user/register',
                     data: userData

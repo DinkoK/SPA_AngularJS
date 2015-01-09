@@ -30,6 +30,7 @@ app.factory('userService',
             publishAgainAd: function (id, success, error) {
                 // TODO
             }
+
         }
     }
 );
