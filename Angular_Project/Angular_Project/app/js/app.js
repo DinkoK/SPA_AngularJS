@@ -9,6 +9,10 @@ app.config(function ($routeProvider) {
 
     $routeProvider.when('/user/publish-new-ad', {
         templateUrl: 'templates/user/publish-new-ad.html',
+        controller: 'UserAdsController'
+    });
+    $routeProvider.when('/user/UserAds', {
+        templateUrl: 'templates/user/UserAds.html',
         controller: 'UserPublishNewAdController'
     });
 
