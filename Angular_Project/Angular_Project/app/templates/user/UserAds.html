@@ -1,12 +1,12 @@
-﻿<pagination total-items="ads.numItems" ng-model="adsParams.startPage"
+﻿<pagination total-items="userAds.numItems" ng-model="adsParams.startPage"
             items-per-page="adsParams.pageSize" ng-change="reloadAds()"
             max-size="9" boundary-links="true">
 </pagination>
 
 <ul >
-    <li ng-repeat="ad in ads.ads" class="box">
+    <li ng-repeat="ad in userAds.ads" class="box">
 
-        <h1>{{ad}}</h1>
+        <h1>{{ad.Title}}</h1>
         <div><strong>Date:</strong> {{ad.date | date:'dd-MMM-yyyy'}}</div>
         <div>
             <strong>Image:</strong>
@@ -19,12 +19,10 @@
             <div><b>Email: </b>{{ad.ownerEmail}}</div>
             <div><b>Phone: </b>{{ad.ownerPhone}}</div>
         </div>
-
-
     </li>
 </ul>
 
-<pagination total-items="ads.numItems" ng-model="adsParams.startPage"
+<pagination total-items="userAds.numItems" ng-model="adsParams.startPage"
             items-per-page="adsParams.pageSize" ng-change="reloadAds()"
             max-size="9" boundary-links="true">
 </pagination>
