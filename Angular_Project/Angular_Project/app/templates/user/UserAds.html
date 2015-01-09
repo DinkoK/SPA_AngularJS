@@ -3,9 +3,8 @@
             max-size="9" boundary-links="true">
 </pagination>
 
-<ul >
+<ul>
     <li ng-repeat="ad in userAds.ads" class="box">
-
         <h1>{{ad.Title}}</h1>
         <div><strong>Date:</strong> {{ad.date | date:'dd-MMM-yyyy'}}</div>
         <div>
@@ -17,8 +16,12 @@
             <div><b>Text: </b>{{ad.text}}</div>
             <div><b>Name: </b>{{ad.ownerName}}</div>
             <div><b>Email: </b>{{ad.ownerEmail}}</div>
-            <div><b>Phone: </b>{{ad.ownerPhone}}</div>
+
         </div>
+        <div><b>Status: </b>{{ad.status}}</div>
+        <div class="button"><b>Edit: </b></div>
+        <div class="button"><b>Publish Again: </b></div>
+        <div class="button"><b>Delete: </b></div>
     </li>
 </ul>
 
