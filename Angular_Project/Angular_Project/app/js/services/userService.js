@@ -33,7 +33,15 @@ app.factory('userService',
                 };
                 $http(request).success(success).error(error);
             },
-            
+            getuserAdByID: function (params,id, success, error) {
+                var request = {
+                    method: 'GET',
+                    url: baseServiceUrl + '/api/user/' + id,
+                    headers: authService.getAuthHeaders(),
+                    params: params
+                };
+                $http(request).success(success).error(error);
+            },
             getUserProfile: function(params,success,error){
                 var request = {
                     method: 'GET',

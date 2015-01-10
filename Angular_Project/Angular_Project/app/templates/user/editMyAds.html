@@ -1,14 +1,19 @@
 ﻿
 <div class="box">
     <h2>Edit  Ad</h2>
+    <ul>
+        <li ng-repeat="ad in userAdById">
+            {{ad}}
+        </li>
+    </ul>
     <p>
         <label for="title">Title:</label>
-        <input type="text" id="title" ng-model="adData.title" required />
+        <input type="text" id="title" ng-model="userAdById.title" required value="{{userAdById.title}}" />
     </p>
 
     <p>
         <label for="textField">Text:</label>
-        <textarea id="textField" ng-model="adData.text" required></textarea>
+        <textarea id="textField"  required></textarea>
     </p>
 
     <p>
@@ -35,7 +40,7 @@
 </div>
     </p>
 <p>
-    <a ng-click="publishAd(adData)" class="button">Publish</a>
+    <a  class="button">Publish</a>
     <a href="#/user/ads" class="button">Cancel</a>
 <p>
     </div>
