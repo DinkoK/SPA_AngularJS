@@ -7,6 +7,11 @@ app.constant('pageSize', 3);
 
 app.config(function ($routeProvider) {
 
+    $routeProvider.when('/user/editProfile', {
+        templateUrl: 'templates/user/editProfile.html',
+        controller: 'EditProfile'
+    });
+
     $routeProvider.when('/user/publish-new-ad', {
         templateUrl: 'templates/user/publish-new-ad.html',
         controller: 'UserPublishNewAdController'

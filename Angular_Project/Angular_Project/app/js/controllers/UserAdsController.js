@@ -21,5 +21,7 @@ app.controller('UserAdsController',
             );
         };
         $scope.reloadAds();
+
+        
     }
 );
