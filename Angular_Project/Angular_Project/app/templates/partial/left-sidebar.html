@@ -26,15 +26,30 @@
 
 <!-- Navigation box for logged in normal users (not admins) -->
 <div ng-if="authService.isNormalUser()" class="box">
-    <h2>Navigation</h2>  
-    
+    <h2>Navigation</h2>      
     <ul class="sidebar-menu">
-        <li><a href="#/">Home</a></li>
-        <li><a href="#/user/UserAds">My Ads</a></li>
-        <li><a href="#/user/publish-new-ad">Publish New Ad</a></li>
-        <!-- TODO: add “Publish New Ad” link -->
-        <!-- TODO: add “Edit Profile” link -->
+        <li><a href="#/" ng-click="HideMyAdsMenu()">Home</a></li>
+       
+        <li><a href="#/user/UserAds" ng-click="ShowMyAds()">My Ads</a></li>
+        <li><a href="#/user/publish-new-ad" ng-click="HideMyAdsMenu()">Publish New Ad</a></li>
+    
+        <li><a href="#/user/editProfile" ng-click="HideMyAdsMenu()">Edit Profile</a></li>
         <li><a ng-click="logout()">Logout</a></li>
+    </ul>
+   
+</div>
+
+<div ng-show="showMyAds" class="box">
+    <h2>My Ads</h2>
+    <ul class="sidebar-menu">
+        <li class="special" ng-class="{'selected' : selectedCategoryId == null}"
+            ng-click="categoryClicked(null)">
+            All
+        </li>
+        <li><a href="#/">Published</a></li>
+        <li><a href="#/">Waiting for Approval</a></li>
+        <li><a href="#/">Inactive</a></li>
+        <li><a href="#/">Rejected</a></li>
     </ul>
 </div>
 

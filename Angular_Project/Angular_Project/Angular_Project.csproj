@@ -61,6 +61,7 @@
     <Content Include="app\css\bootstrap-theme.css" />
     <Content Include="app\css\bootstrap.css" />
     <Content Include="app\img\no-img.jpg" />
+    <Content Include="app\js\controllers\editProfile.js" />
     <Content Include="app\js\controllers\HomeController.js" />
     <Content Include="app\js\controllers\LoginController.js" />
     <Content Include="app\js\controllers\RegisterController.js" />
@@ -69,6 +70,7 @@
     <Content Include="app\js\controllers\UserPublishNewAdController.js" />
     <Content Include="app\js\services\userService.js" />
     <Content Include="app\templates\pagination\pagination.html" />
+    <Content Include="app\templates\partial\editProfile.html" />
     <Content Include="app\templates\user\publish-new-ad.html" />
     <Content Include="app\templates\user\UserAds.html" />
     <Content Include="start-web-server.bat" />
