@@ -6,7 +6,7 @@ app.controller('EditProfile',
         $scope.towns = townsService.getTowns();
 
         $scope.getUserInfo = function () {
-            userService.getUserInfo(
+            userService.getUserProfile(
                 $scope.userParams,
                 function success(data) {
                     $scope.userInfo = data;
@@ -17,6 +17,19 @@ app.controller('EditProfile',
             );
         };
         $scope.getUserInfo();
+
+        $scope.chagePass = function (userPass) {
+            userService.changeUserPassword(userPass,
+                function success() {
+                    notifyService.showInfo("Password change success!");
+                    $location.path("/");
+                },
+                function error(err) {
+                    notifyService.showError("Password change failed", err);
+                }
+            );
+        };
+        
         //$scope.editProfile = function (userData) {
         //    userService.register(userData,
         //        function success() {

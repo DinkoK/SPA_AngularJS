@@ -34,15 +34,27 @@ app.factory('userService',
                 $http(request).success(success).error(error);
             },
             
-            //getUserProfile: function(params,success,error){
-            //    var request = {
-            //        method: 'GET',
-            //        url: baseServiceUrl + '/api/user/profile',
-            //        headers: authService.getAuthHeaders(),
-            //        params: params
-            //    };
-            //    $http(request).success(success).error(error);
-            //},
+            getUserProfile: function(params,success,error){
+                var request = {
+                    method: 'GET',
+                    url: baseServiceUrl + '/api/user/profile',
+                    headers: authService.getAuthHeaders(),
+                    params: params
+                };
+                $http(request).success(success).error(error);
+            },
+            
+            changeUserPassword: function (userPass, success, error) {
+                var request = {
+                    method: 'PUT',
+                    url: baseServiceUrl + '/api/user/changePassword',
+                    data: userPass
+                };
+                $http(request).success(function (data) {
+                   
+                    success(data);
+                }).error(error);
+            },
             deactivateAd: function (id, success, error) {
                 // TODO
             },

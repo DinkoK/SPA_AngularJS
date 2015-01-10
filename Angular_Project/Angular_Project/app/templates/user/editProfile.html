@@ -1,35 +1,51 @@
 ﻿<div class="box">
     <h2>Edit Profile</h2>
-
-    
     <p>
-       
         <label for="name">Name:</label>
-        <input type="text" id="name" ng-model="userData.name" required />
+        <input type="text" id="name" ng-model="userInfo.name" required value="{{userInfo.name}}" />
     </p>
+   
     <p>
-        
         <label for="email">Email:</label>
-        <input type="email" id="email" ng-model="userData.email" required />
+        <input type="email" id="email" ng-model="userInfo.email" required value="{{userInfo.email}}" />
     </p>
     <p>
-     
         <label for="phone">Phone:</label>
-        <input type="tel" id="phone" ng-model="userData.phone" required />
+        <input type="tel" id="phone" ng-model="userInfo.phoneNumber" required value="{{userInfo.phoneNumber}}" />
     </p>
     <p>
         <label for="town">Town:</label>
-        <select id="town" ng-model="userData.townId">
-            <option value="null">(None)</option>
+        <select id="town" ng-model="userInfo.townId">
+            <option value="userInfo.phoneNumber">(None)</option>
             <option ng-repeat="town in towns" value="{{town.id}}">
                 {{town.name}}
             </option>
         </select>
     </p>
     <p>
-        <a  class="button">Update</a>
+        <a class="button">Update</a>
         <a href="#/home" class="button">Cancel</a>
     <p>
 </div>
+<div class="box">
+    <h2>Change Password</h2>
+    <p>
+        <label for="oldPassword">Old Password:</label>
+        <input type="password" id="oldPassword" ng-model="userPass.oldPassword" required />
+    </p>
+    <p>
+        <label for="newPass">New Password:</label>
+        <input type="password" id="newPass" ng-model="userPass.newPassword" required />
+    </p>
+    <p>
+        <label for="confirmNewPass">Confirm New Password:</label>
+        <input type="password" id="confirmNewPass" ng-model="userPass.confirmPassword" required />
+    </p>
+    <p>
+        <a ng-click="chagePass(userPass)" class="button">Change password</a>
+        <a href="#/home" class="button">Cancel</a>
+    <p>
+</div>
+
 
 
