@@ -1,5 +1,16 @@
 ﻿'use strict';
-
+//app.factory('userInfoService',
+//   function ($resource, baseServiceUrl) {
+//       var userResource = $resource(
+//            baseServiceUrl + '/user/profile'
+//        );
+//       return {
+//           getUserInfo: function (params, success, error) {
+//               return userInfoService.query(params, success, error);
+//           }
+//       }
+//   }
+//);
 app.factory('userService',
     function ($http, baseServiceUrl, authService) {
         return {
@@ -22,15 +33,16 @@ app.factory('userService',
                 };
                 $http(request).success(success).error(error);
             },
-            getUserProfile: function(){
-                var request = {
-                    method: 'GET',
-                    url: baseServiceUrl + '/api/user/profile',
-                    headers: authService.getAuthHeaders(),
-                    params: params
-                };
-                $http(request).success(success).error(error);
-            },
+            
+            //getUserProfile: function(params,success,error){
+            //    var request = {
+            //        method: 'GET',
+            //        url: baseServiceUrl + '/api/user/profile',
+            //        headers: authService.getAuthHeaders(),
+            //        params: params
+            //    };
+            //    $http(request).success(success).error(error);
+            //},
             deactivateAd: function (id, success, error) {
                 // TODO
             },
