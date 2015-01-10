@@ -11,6 +11,10 @@ app.config(function ($routeProvider) {
         templateUrl: 'templates/user/editProfile.html',
         controller: 'EditProfile'
     });
+    $routeProvider.when('/user/editMyAds', {
+        templateUrl: 'templates/user/editMyAds.html',
+        controller: 'editMyAdsController'
+    });
 
     $routeProvider.when('/user/publish-new-ad', {
         templateUrl: 'templates/user/publish-new-ad.html',

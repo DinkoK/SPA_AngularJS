@@ -16,14 +16,14 @@
     <p>
         <label for="town">Town:</label>
         <select id="town" ng-model="userInfo.townId">
-            <option value="userInfo.phoneNumber">(None)</option>
+            <option value="userInfo.townId">(None)</option>
             <option ng-repeat="town in towns" value="{{town.id}}">
                 {{town.name}}
             </option>
         </select>
     </p>
     <p>
-        <a class="button">Update</a>
+        <a ng-click="updateUser(userInfo)" class="button">Update</a>
         <a href="#/home" class="button">Cancel</a>
     <p>
 </div>
