@@ -79,6 +79,7 @@
     <Content Include="start-web-server.sh" />
     <Content Include="app\css\bootstrap-theme.css.map" />
     <Content Include="app\css\bootstrap.css.map" />
+    <Content Include="Test Card\Test Card.xlsx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

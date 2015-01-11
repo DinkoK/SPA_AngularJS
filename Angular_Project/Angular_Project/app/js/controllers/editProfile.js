@@ -29,8 +29,8 @@ app.controller('EditProfile',
                 }
             );
         };
-        $scope.updateUser = function (userPass) {
-            userService.updateUserInfo(userPass,
+        $scope.updateUser = function (userInfo) {
+            userService.updateUserInfo(userInfo,
                 function success() {
                     notifyService.showInfo("Password change success!");
                     $location.path("/");

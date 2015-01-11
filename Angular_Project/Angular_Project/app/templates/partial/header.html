@@ -4,5 +4,5 @@
 <div ng-if="authService.isLoggedIn()" class="user-area">
     <span>{{authService.getCurrentUser().username}}</span>
     <span>{{authService.isAdmin()}}</span>
-    <a ng-click="logout()" class="link">Logout</a>
+    <a ng-click="logout()" class="link" href="#/">Logout</a>
 </div>
