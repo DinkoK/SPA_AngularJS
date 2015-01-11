@@ -32,11 +32,11 @@ app.controller('EditProfile',
         $scope.updateUser = function (userInfo) {
             userService.updateUserInfo(userInfo,
                 function success() {
-                    notifyService.showInfo("Password change success!");
+                    notifyService.showInfo("User  update success!");
                     $location.path("/");
                 },
                 function error(err) {
-                    notifyService.showError("Password change failed", err);
+                    notifyService.showError("User  update failed", err);
                 }
             );
         };

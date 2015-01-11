@@ -12,8 +12,9 @@ app.controller('AppController', function ($scope, authService, notifyService) {
     $scope.logout = function () {
         authService.logout();
         notifyService.showInfo('Logout successful');
-        $scope.HideMyAdsMenu();
+        
         $location.path("/");
+        $scope.HideMyAdsMenu();
     };
     
 
